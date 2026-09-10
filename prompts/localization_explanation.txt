@@ -1,0 +1,13 @@
+Analyze this driving scene and localization state.
+
+Inputs:
+- Current image frame
+- Trajectory metrics: ATE, RPE, drift
+- Tracking quality indicators: feature count, reprojection error, tracking status
+- Runtime verification results
+
+Task:
+1) Explain likely root causes of localization degradation.
+2) Mention which evidence supports your explanation.
+3) State confidence level and uncertainty.
+4) Avoid unsupported claims.
