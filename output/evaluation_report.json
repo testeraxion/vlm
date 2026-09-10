@@ -1,0 +1,512 @@
+{
+  "report_source": "outputs\\latest_run.json",
+  "annotations_source": "annotations\\example_annotations.json",
+  "generated_at": "2026-08-05T13:59:20.139199+00:00",
+  "summary": {
+    "num_sequences": 5,
+    "num_annotated": 5,
+    "explanation_metrics": {
+      "claim_precision": {
+        "mean": 0.05,
+        "std": 0.1,
+        "n": 5
+      },
+      "claim_recall": {
+        "mean": 0.0667,
+        "std": 0.1333,
+        "n": 5
+      },
+      "claim_f1": {
+        "mean": 0.0571,
+        "std": 0.1143,
+        "n": 5
+      },
+      "hazard_precision": {
+        "mean": 0.6667,
+        "std": 0.0,
+        "n": 5
+      },
+      "hazard_recall": {
+        "mean": 1.0,
+        "std": 0.0,
+        "n": 5
+      },
+      "hazard_f1": {
+        "mean": 0.8,
+        "std": 0.0,
+        "n": 5
+      },
+      "hallucination_rate": {
+        "mean": 0.3333,
+        "std": 0.0,
+        "n": 5
+      }
+    },
+    "consistency": {
+      "mean_text_similarity": null,
+      "n": 0
+    },
+    "latency": {
+      "mean_s": null,
+      "n": 0
+    }
+  },
+  "correlation_rq3": [
+    {
+      "vlm_signal": "hazard_count",
+      "safety_metric": "ate_rmse",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hazard_count",
+      "safety_metric": "drift_final_m",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hazard_count",
+      "safety_metric": "rpe_mean",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hazard_count",
+      "safety_metric": "violation_count",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.6,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hazard_count",
+      "safety_metric": "stl_robustness",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hallucination_risk",
+      "safety_metric": "ate_rmse",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hallucination_risk",
+      "safety_metric": "drift_final_m",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hallucination_risk",
+      "safety_metric": "rpe_mean",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hallucination_risk",
+      "safety_metric": "violation_count",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.6,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "hallucination_risk",
+      "safety_metric": "stl_robustness",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "consistency_score",
+      "safety_metric": "ate_rmse",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "consistency_score",
+      "safety_metric": "drift_final_m",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": -0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "consistency_score",
+      "safety_metric": "rpe_mean",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.2,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "consistency_score",
+      "safety_metric": "violation_count",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.6,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "consistency_score",
+      "safety_metric": "stl_robustness",
+      "n": 5,
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_r": 0.3,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "evidence_alignment",
+      "safety_metric": "ate_rmse",
+      "n": 5,
+      "pearson_r": -0.7707,
+      "pearson_p": 0.2016,
+      "spearman_r": -0.9,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "evidence_alignment",
+      "safety_metric": "drift_final_m",
+      "n": 5,
+      "pearson_r": -0.8536,
+      "pearson_p": 0.1158,
+      "spearman_r": -0.9,
+      "spearman_p": 0.002
+    },
+    {
+      "vlm_signal": "evidence_alignment",
+      "safety_metric": "rpe_mean",
+      "n": 5,
+      "pearson_r": -0.0301,
+      "pearson_p": 1.0,
+      "spearman_r": 0.1,
+      "spearman_p": 0.8004
+    },
+    {
+      "vlm_signal": "evidence_alignment",
+      "safety_metric": "violation_count",
+      "n": 5,
+      "pearson_r": -0.4772,
+      "pearson_p": 0.3593,
+      "spearman_r": -0.3,
+      "spearman_p": 0.5768
+    },
+    {
+      "vlm_signal": "evidence_alignment",
+      "safety_metric": "stl_robustness",
+      "n": 5,
+      "pearson_r": 0.8535,
+      "pearson_p": 0.2016,
+      "spearman_r": 0.9,
+      "spearman_p": 0.002
+    }
+  ],
+  "per_sequence": [
+    {
+      "sequence_id": "2011_09_26_drive_0009_sync",
+      "backends": {
+        "slam_backend": "trajectory_file",
+        "vlm_backend": "qwen_vl"
+      },
+      "vlm_signals": {
+        "hazard_count": 3.0,
+        "hallucination_risk": 0.15,
+        "consistency_score": 0.94,
+        "evidence_alignment": 1.0
+      },
+      "safety_metrics": {
+        "ate_rmse": 303.0743814727404,
+        "rpe_mean": 1.13464594388166,
+        "drift_final_m": 445.6717680259082,
+        "violation_count": 157.0,
+        "stl_robustness": -444.70257874310704
+      },
+      "explanation_metrics": {
+        "sequence_id": "2011_09_26_drive_0009_sync",
+        "claim_precision": 0.0,
+        "claim_recall": 0.0,
+        "claim_f1": 0.0,
+        "hazard_precision": 0.6667,
+        "hazard_recall": 1.0,
+        "hazard_f1": 0.8,
+        "hallucination_rate": 0.3333,
+        "model_claims": [],
+        "expected_claims": [
+          "safety_violation",
+          "trajectory_drift"
+        ],
+        "correct_claims": [],
+        "model_hazards": [
+          "localization_degradation",
+          "model_reported_risk",
+          "safety_violation"
+        ],
+        "expected_hazards": [
+          "localization_degradation",
+          "safety_violation"
+        ],
+        "hallucinated_hazards": [
+          "model_reported_risk"
+        ]
+      },
+      "consistency": null,
+      "latency": null,
+      "annotated": true
+    },
+    {
+      "sequence_id": "2011_09_26_drive_0015_sync",
+      "backends": {
+        "slam_backend": "trajectory_file",
+        "vlm_backend": "qwen_vl"
+      },
+      "vlm_signals": {
+        "hazard_count": 3.0,
+        "hallucination_risk": 0.15,
+        "consistency_score": 0.94,
+        "evidence_alignment": 1.0
+      },
+      "safety_metrics": {
+        "ate_rmse": 293.0758815697481,
+        "rpe_mean": 1.7899835161266249,
+        "drift_final_m": 529.581636227658,
+        "violation_count": 83.0,
+        "stl_robustness": -528.581636227658
+      },
+      "explanation_metrics": {
+        "sequence_id": "2011_09_26_drive_0015_sync",
+        "claim_precision": 0.0,
+        "claim_recall": 0.0,
+        "claim_f1": 0.0,
+        "hazard_precision": 0.6667,
+        "hazard_recall": 1.0,
+        "hazard_f1": 0.8,
+        "hallucination_rate": 0.3333,
+        "model_claims": [
+          "environmental_obstruction",
+          "motion_blur"
+        ],
+        "expected_claims": [
+          "geometric_inconsistency",
+          "safety_violation",
+          "trajectory_drift"
+        ],
+        "correct_claims": [],
+        "model_hazards": [
+          "localization_degradation",
+          "model_reported_risk",
+          "safety_violation"
+        ],
+        "expected_hazards": [
+          "localization_degradation",
+          "safety_violation"
+        ],
+        "hallucinated_hazards": [
+          "model_reported_risk"
+        ]
+      },
+      "consistency": null,
+      "latency": null,
+      "annotated": true
+    },
+    {
+      "sequence_id": "2011_09_26_drive_0023_sync",
+      "backends": {
+        "slam_backend": "trajectory_file",
+        "vlm_backend": "qwen_vl"
+      },
+      "vlm_signals": {
+        "hazard_count": 3.0,
+        "hallucination_risk": 0.15,
+        "consistency_score": 0.94,
+        "evidence_alignment": 1.0
+      },
+      "safety_metrics": {
+        "ate_rmse": 225.06527784524008,
+        "rpe_mean": 0.8392976589194452,
+        "drift_final_m": 394.96123217687773,
+        "violation_count": 150.0,
+        "stl_robustness": -393.96123217687773
+      },
+      "explanation_metrics": {
+        "sequence_id": "2011_09_26_drive_0023_sync",
+        "claim_precision": 0.0,
+        "claim_recall": 0.0,
+        "claim_f1": 0.0,
+        "hazard_precision": 0.6667,
+        "hazard_recall": 1.0,
+        "hazard_f1": 0.8,
+        "hallucination_rate": 0.3333,
+        "model_claims": [
+          "environmental_obstruction",
+          "motion_blur"
+        ],
+        "expected_claims": [
+          "safety_violation",
+          "trajectory_drift"
+        ],
+        "correct_claims": [],
+        "model_hazards": [
+          "localization_degradation",
+          "model_reported_risk",
+          "safety_violation"
+        ],
+        "expected_hazards": [
+          "localization_degradation",
+          "safety_violation"
+        ],
+        "hallucinated_hazards": [
+          "model_reported_risk"
+        ]
+      },
+      "consistency": null,
+      "latency": null,
+      "annotated": true
+    },
+    {
+      "sequence_id": "2011_09_26_drive_0036_sync",
+      "backends": {
+        "slam_backend": "trajectory_file",
+        "vlm_backend": "qwen_vl"
+      },
+      "vlm_signals": {
+        "hazard_count": 3.0,
+        "hallucination_risk": 0.15,
+        "consistency_score": 0.94,
+        "evidence_alignment": 0.5
+      },
+      "safety_metrics": {
+        "ate_rmse": 353.13113955326367,
+        "rpe_mean": 1.3375090765237325,
+        "drift_final_m": 650.5522124856918,
+        "violation_count": 194.0,
+        "stl_robustness": -649.5522124856918
+      },
+      "explanation_metrics": {
+        "sequence_id": "2011_09_26_drive_0036_sync",
+        "claim_precision": 0.25,
+        "claim_recall": 0.3333,
+        "claim_f1": 0.2857,
+        "hazard_precision": 0.6667,
+        "hazard_recall": 1.0,
+        "hazard_f1": 0.8,
+        "hallucination_rate": 0.3333,
+        "model_claims": [
+          "environmental_obstruction",
+          "low_feature_support",
+          "motion_blur",
+          "trajectory_drift"
+        ],
+        "expected_claims": [
+          "geometric_inconsistency",
+          "safety_violation",
+          "trajectory_drift"
+        ],
+        "correct_claims": [
+          "trajectory_drift"
+        ],
+        "model_hazards": [
+          "localization_degradation",
+          "model_reported_risk",
+          "safety_violation"
+        ],
+        "expected_hazards": [
+          "localization_degradation",
+          "safety_violation"
+        ],
+        "hallucinated_hazards": [
+          "model_reported_risk"
+        ]
+      },
+      "consistency": null,
+      "latency": null,
+      "annotated": true
+    },
+    {
+      "sequence_id": "2011_09_26_drive_0093_sync",
+      "backends": {
+        "slam_backend": "trajectory_file",
+        "vlm_backend": "qwen_vl"
+      },
+      "vlm_signals": {
+        "hazard_count": 3.0,
+        "hallucination_risk": 0.15,
+        "consistency_score": 0.94,
+        "evidence_alignment": 1.0
+      },
+      "safety_metrics": {
+        "ate_rmse": 255.3189192695781,
+        "rpe_mean": 1.4893494057762628,
+        "drift_final_m": 381.68663424683604,
+        "violation_count": 193.0,
+        "stl_robustness": -380.68663424683604
+      },
+      "explanation_metrics": {
+        "sequence_id": "2011_09_26_drive_0093_sync",
+        "claim_precision": 0.0,
+        "claim_recall": 0.0,
+        "claim_f1": 0.0,
+        "hazard_precision": 0.6667,
+        "hazard_recall": 1.0,
+        "hazard_f1": 0.8,
+        "hallucination_rate": 0.3333,
+        "model_claims": [
+          "environmental_obstruction",
+          "motion_blur"
+        ],
+        "expected_claims": [
+          "geometric_inconsistency",
+          "safety_violation",
+          "trajectory_drift"
+        ],
+        "correct_claims": [],
+        "model_hazards": [
+          "localization_degradation",
+          "model_reported_risk",
+          "safety_violation"
+        ],
+        "expected_hazards": [
+          "localization_degradation",
+          "safety_violation"
+        ],
+        "hallucinated_hazards": [
+          "model_reported_risk"
+        ]
+      },
+      "consistency": null,
+      "latency": null,
+      "annotated": true
+    }
+  ]
+}

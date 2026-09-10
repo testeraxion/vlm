@@ -1,0 +1,53 @@
+"sequence_id","num_frames","slam_backend","vlm_backend","scene_image_path","slam_ate_rmse","slam_rpe_mean","slam_drift_final_m","fusion_ate_rmse","fusion_rpe_mean","fusion_drift_final_m","rv_stl_robustness","rv_violation_count","rv_total_violation_duration_s","rv_max_consecutive_lost_s","rv_always_position_error_lt_threshold","rv_never_tracking_lost_too_long","rv_eventually_tracking_recovers","vlm_hallucination_risk","vlm_consistency_score","vlm_scene_caption","vlm_explanation","vlm_hazards","evidence_supported_claim_count","evidence_unsupported_claim_count","evidence_alignment_score","flagged_claims"
+"2011_09_26_drive_0009_sync","447","trajectory_file","qwen_vl","dataset\2011_09_26_drive_0009_sync\2011_09_26\2011_09_26_drive_0009_sync\image_02\data\0000000413.png","303.0743814727404","1.13464594388166","445.6717680259082","198.66125783954718","0.7450060020472611","292.0115067812028","-444.70257874310704","157","15.700000000000001","15.700000000000001","False","False","False","0.15","0.94","1) The scene shows an intersection with multiple traffic lights, road signs, and a white car stopped at a red light","1) The scene shows an intersection with multiple traffic lights, road signs, and a white car stopped at a red light.
+
+2) Likely localization degradation causes include:
+   - The presence of multiple traffic lights and signs can confuse the localization system.
+   - The car's position relative to the signs and lights might be misinterpreted due to the angle and distance from the camera.
+
+3) Safety hazards and uncertainty include:
+   - The car is stopped at a red light, which could lead to accidents if it doesn't stop.
+   - The presence of multiple traffic lights and signs increases the risk of confusion for drivers and pedestrians.
+   - The exact location and orientation of the car might not be accurately determined by the system, leading to potential errors in navigation or collision detection.","model-reported risk; safety constraint violation; localization degradation risk","0","0","1",""
+"2011_09_26_drive_0015_sync","297","trajectory_file","qwen_vl","dataset\2011_09_26_drive_0015_sync\2011_09_26\2011_09_26_drive_0015_sync\image_02\data\0000000296.png","293.0758815697481","1.7899835161266249","529.581636227658","192.19128322344957","1.1744094716788194","347.3569528929003","-528.581636227658","83","8.3","8.3","False","False","False","0.15","0.94","1) The scene shows a two-lane road with a single car approaching from the distance","1) The scene shows a two-lane road with a single car approaching from the distance. There are power lines and poles on both sides of the road, and a train track runs parallel to the road. In the background, there are buildings and trees.
+
+2) Likely localization degradation causes include:
+   - The image appears to be taken from a moving vehicle, which can lead to motion blur and inaccurate localization.
+   - The road and surroundings may not align perfectly with the camera's orientation, causing misalignment.
+   - The presence of power lines and poles can introduce false positives or confusions in object detection.
+
+3) Safety hazards and uncertainty include:
+   - The car is approaching at a high speed, increasing the risk of accidents if it fails to maintain lane discipline.
+   - The driver's attention may be distracted by the surrounding environment, leading to potential hazards.
+   - The exact location and","model-reported risk; safety constraint violation; localization degradation risk","0","0","1",""
+"2011_09_26_drive_0023_sync","474","trajectory_file","qwen_vl","dataset\2011_09_26_drive_0023_sync\2011_09_26\2011_09_26_drive_0023_sync\image_02\data\0000000473.png","225.06527784524008","0.8392976589194452","394.96123217687773","148.04676948476947","0.5524386824275458","259.6495175736847","-393.96123217687773","150","15","15","False","False","False","0.15","0.94","1) The scene shows a street lined with parked cars on the left side and a building on the right","1) The scene shows a street lined with parked cars on the left side and a building on the right. There is a tree-lined sidewalk and a few vehicles, including a yellow truck, on the road.
+
+2) Likely localization degradation causes include:
+   - The image appears to be taken from a moving vehicle, as indicated by the slight motion blur.
+   - The angle of the shot may not align perfectly with the vehicle's orientation, leading to potential misalignment.
+   - The presence of shadows and reflections can affect the accuracy of the localization algorithm.
+
+3) Safety hazards and uncertainty include:
+   - The yellow truck on the road could pose a risk if it is not visible or if its position changes unexpectedly.
+   - The slight motion blur suggests that the vehicle might be moving, which increases the risk of accidents.
+   - The lack of clear lane markings or traffic signals could lead to confusion for","model-reported risk; safety constraint violation; localization degradation risk","0","0","1",""
+"2011_09_26_drive_0036_sync","803","trajectory_file","qwen_vl","dataset\2011_09_26_drive_0036_sync\2011_09_26\2011_09_26_drive_0036_sync\image_02\data\0000000802.png","353.13113955326367","1.3375090765237325","650.5522124856918","231.4228509956394","0.8762464591939719","425.89841120195695","-649.5522124856918","194","19.400000000000002","19.400000000000002","False","False","False","0.15","0.94","1) The scene shows a red Coca-Cola delivery truck parked on the side of a road with trees and buildings in the background","1) The scene shows a red Coca-Cola delivery truck parked on the side of a road with trees and buildings in the background.
+
+2) Likely localization degradation causes include:
+   - The truck is not moving, which can lead to drift.
+   - The road markings may be slightly blurred or distorted due to the camera's perspective.
+   - The presence of trees and buildings in the background can introduce additional features that confuse the localization algorithm.
+
+3) Safety hazards and uncertainty include:
+   - The truck is parked on the side of the road, which could obstruct traffic if it moves unexpectedly.
+   - The exact location and orientation of the truck might be uncertain due to the drift and feature count issues.","model-reported risk; safety constraint violation; localization degradation risk","1","1","0.5","low features / weak visual landmarks"
+"2011_09_26_drive_0093_sync","433","trajectory_file","qwen_vl","dataset\2011_09_26_drive_0093_sync\2011_09_26\2011_09_26_drive_0093_sync\image_02\data\0000000432.png","255.3189192695781","1.4893494057762628","381.68663424683604","211.0599848819068","1.3582114908207605","292.6869669849094","-380.68663424683604","193","19.3","19.3","False","False","False","0.15","0.94","1) The scene shows a street with parked cars on the right side, a building with signage, and a sidewalk","1) The scene shows a street with parked cars on the right side, a building with signage, and a sidewalk. There is a traffic light and a signpost visible.
+
+2) Likely localization degradation causes include:
+   - The image appears to be taken from a moving vehicle, as indicated by the motion blur.
+   - The angle of the shot may not align perfectly with the vehicle's orientation, leading to misalignment.
+   - The presence of multiple objects (cars, buildings, signs) can make it difficult for the system to accurately identify and localize the vehicle.
+
+3) Safety hazards and uncertainty include:
+   - The vehicle's position relative to other vehicles and pedestrians cannot be precisely determined due to the motion blur and angle issues.
+   - The exact location and direction of travel cannot be confidently identified, increasing the risk of accidents or collisions.","model-reported risk; safety constraint violation; localization degradation risk","0","0","1",""

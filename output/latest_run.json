@@ -1,0 +1,69 @@
+[
+  {
+    "sequence_id": "2011_10_03_drive_0047_sync",
+    "num_frames": 837,
+    "backends": {
+      "slam_backend": "trajectory_file",
+      "vlm_backend": "rule_based"
+    },
+    "scene_image_path": "dataset\\2011_10_03_drive_0047_sync\\2011_10_03\\2011_10_03_drive_0047_sync\\image_02\\data\\0000000762.png",
+    "slam_metrics": {
+      "ate_rmse": 527.3084456716834,
+      "rpe_mean": 1.1717315921244715,
+      "drift_final_m": 931.065519215233
+    },
+    "fusion_metrics": {
+      "ate_rmse": 24.018081846992647,
+      "rpe_mean": 0.1802316569504757,
+      "drift_final_m": 43.988909270349794
+    },
+    "aligned_slam_metrics": {
+      "ate_rmse": 42.003416724724175,
+      "rpe_mean": 0.23825937630353125,
+      "drift_final_m": 79.67345796722881
+    },
+    "gps_only_metrics": {
+      "ate_rmse": 0.0,
+      "rpe_mean": 0.0,
+      "drift_final_m": 0.0
+    },
+    "runtime_verification": {
+      "stl_robustness": -53.23024389047698,
+      "violation_count": 0,
+      "total_violation_duration_s": 0.0,
+      "max_consecutive_lost_s": 0.0,
+      "property_summary": {
+        "always_position_error_lt_threshold": false,
+        "never_tracking_lost_too_long": true,
+        "eventually_tracking_recovers": true
+      }
+    },
+    "vlm": {
+      "explanation": "Localization analysis: accumulated trajectory drift indicates long-horizon localization instability. Suggested operator action: monitor confidence and switch to conservative control when risk rises.",
+      "hazards": [
+        "localization degradation risk"
+      ],
+      "hallucination_risk": 0.15,
+      "consistency_score": 0.94,
+      "scene_caption": null,
+      "consistency": {
+        "runs": 1,
+        "text_similarity": 1.0,
+        "claim_agreement": 1.0,
+        "text_std": 0.0,
+        "note": "consistency requires multiple runs (vlm_consistency_runs > 1)"
+      },
+      "latency": {
+        "runs": 1,
+        "mean_s": 0.0,
+        "std_s": 0.0
+      }
+    },
+    "explanation_evidence": {
+      "supported_claim_count": 1,
+      "unsupported_claim_count": 0,
+      "evidence_alignment_score": 1.0,
+      "flagged_claims": []
+    }
+  }
+]
